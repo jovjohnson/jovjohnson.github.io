@@ -70,23 +70,25 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>ABOUT ME</h2>
-                    <br>
                 </div>
+            </div>
+            <div class="col-md-6">
+              <center><div class="photo"></div></center>
             </div>
             <div class="row">
                 <div class="col-md-6">
+                  <br>
+                  <br>
+                  <br>
                   <p class="bout">I'm a motivated full stack Javascript Developer with a passion for building rich, engaging, and innovative applications
                     and solving problems with code and design.
                     Along with web development, I enjoy video production and social justice advocacy.
                     Oh, and dogs. Feel free to <a href='#contact'>drop me a line</a>, I would love to hear from you!
                   </p>
                 </div>
-                <div class="col-md-6">
-                  <center><div class="photo"></div></center>
-                </div>
               </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center" id="technologies">
-                  <!-- <h3>LET'S TALK SKILLS</h3> -->
+                  <h3>LET'S TALK SKILLS</h3>
                   <center>
                     <ul id="tech">
                       <li class="tech-items"><img class="hvr-bob tech" src="/img/html-css-js.png"></li>
@@ -97,9 +99,9 @@
                       <li class="tech-items"><img class="hvr-bob tech" src="/img/jquery.png"></li>
                     </ul>
                     <br>
-                    <br>
-                    <br>
-                    link to resume
+                    <span class="check-me-out hvr-grow page-scroll">
+                      <a href="#portfolio" id="cmo">view some projects<i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+                    </span>
                   </center>
                 </div>
             </div>
@@ -116,6 +118,36 @@
                 </div>
             </div>
             <div class="row">
+              <div class="col-sm-4 portfolio-item">
+                  <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                      <div class="caption">
+                          <div class="caption-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img id="foodle" src="img/portfolio/foodlescreen.png" class="img-responsive" alt="">
+                  </a>
+              </div>
+              <div class="col-sm-4 portfolio-item">
+                <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                  <div class="caption">
+                    <div class="caption-content">
+                      <i class="fa fa-search-plus fa-3x"></i>
+                    </div>
+                  </div>
+                  <img src="img/portfolio/playlister.png" class="img-responsive" alt="">
+                </a>
+              </div>
+              <div class="col-sm-4 portfolio-item">
+                <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                  <div class="caption">
+                    <div class="caption-content">
+                      <i class="fa fa-search-plus fa-3x"></i>
+                    </div>
+                  </div>
+                  <img src="img/portfolio/donutgame.png" class="img-responsive" alt="" height="200">
+                </a>
+              </div>
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -124,26 +156,6 @@
                             </div>
                         </div>
                         <img src="img/portfolio/ttt.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/playlister.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/foodle-iphone1.png" class="img-responsive" alt="" height="200">
                     </a>
                 </div>
             </div>
@@ -161,12 +173,17 @@
               <br>
               <center>
               <div class="contact animated slideInDown">
-                <i class="fa fa-envelope fa-5x hvr-pulse" aria-hidden="true"></i>
-                <i class="fa fa-twitter-square fa-5x hvr-pulse" aria-hidden="true"></i>
-                <i class="fa fa-linkedin-square fa-5x hvr-pulse" aria-hidden="true"></i>
-                <i class="fa fa-github-square fa-5x hvr-pulse" aria-hidden="true"></i>
+                <a href="mailto:jjohnsow@gmail.com"><i class="fa fa-envelope fa-5x hvr-pulse" aria-hidden="true"></i></a>
+                <a href="http://twitter.com/jofreshh>"<i class="fa fa-twitter-square fa-5x hvr-pulse" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/jovvi-johnson-957036b4"><i class="fa fa-linkedin-square fa-5x hvr-pulse" aria-hidden="true"></i></a>
+                <a href="http://github.com/jovjohnson"<i class="fa fa-github-square fa-5x hvr-pulse" aria-hidden="true"></i></a>
                 <i class="fa fa-angellist fa-5x hvr-pulse" aria-hidden="true"></i>
               </div>
+              <br>
+              <br>
+              <br>
+                <span class="check-me-out hvr-grow page-scroll"><a href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i>
+                </a></span>
               </center>
             </div>
             <br>
@@ -175,7 +192,7 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                     <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <!-- <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Name</label>
@@ -211,7 +228,7 @@
                                 <button type="submit" class="btn btn-success btn-lg">Send</button>
                             </div>
                         </div>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </div>
@@ -303,21 +320,15 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Foodle</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <img src="img/portfolio/foodleshots.png" class="img-responsive img-centered" alt="">
+                          <p>An Ionic moblie app matching users to choice restaurants in their area. Built by a four member team and currently available to download on Google Play.
+                          Visit <a href="http://foodle.tech">http://foodle.tech</a>!</p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                <li>Tools:
+                                    <strong>
+                                      Ionic + Cordova + Angular + MongoDB + Node.js + Yelp API
                                     </strong>
                                 </li>
                             </ul>
@@ -343,10 +354,11 @@
                             <h2>T<sup>3</sup></h2>
                             <hr class="star-primary">
                             <img src="img/portfolio/ttt.png" class="img-responsive img-centered" alt="">
-                            <p>Vanilla JS Tic Tac Toe spiced up with some bold CSS.</p>
+                            <p>Vanilla JS Tic Tac Toe spiced up with some bold CSS. <a href="http://jovjohnson.github.io/tictac/">Play it here.</a></p>
                             <ul class="list-inline item-details">
                               <li>Tools:
-                                <strong>Javascript + CSS + HTML
+                                <strong>
+                                  Javascript + CSS + HTML
                                 </strong>
                               </li>
                             </ul>
@@ -374,8 +386,9 @@
                             <img src="img/portfolio/playlister.png" class="img-responsive img-centered" alt="">
                             <p>A simple CRUD application that stores a user's playlist (song title, artist, and genre) while implementing a RESTful API from Last.fm to display artist biographies and discographies.</p>
                             <ul class="list-inline item-details">
-                                <li>Tools: AngularJS, Express, Node, Materialize
+                                <li>Tools:
                                     <strong>
+                                      AngularJS, Express, Node, Materialize
                                     </strong>
                                 </li>
                             </ul>
@@ -398,23 +411,15 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Homer's Impossible Donut Game</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <img src="img/portfolio/donutgame.png" class="img-responsive img-centered" alt="">
+                            <p>A fun game of math and logic built with jQuery. <a href="http://jovjohnson.github.io/donutgame/">Play it here</a>.</p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
+                              <li>Tools:
+                                <strong>Javascript + jQuery + CSS + HTML
+                                </strong>
+                              </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>

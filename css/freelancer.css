@@ -22,13 +22,14 @@ p.small {
 }
 
 a {
-   color: #53D4C8;
+   /*color: #53D4C8;*/
+   color: #000;
 }
 a:hover
  {
 
    text-decoration: none;
-  
+
  }
 
 a:focus,
@@ -134,7 +135,7 @@ header .intro-text .skills {
 }
 
 section {
-    padding: 70px 0;
+    padding: 50px 0;
     font-family: Quicksand,sans-serif;
     text-align: justify;
 }
@@ -148,7 +149,7 @@ section.success {
     color: white;
     background: #efefef;
     height: 1000px;
-    margin-top: 35px;
+    margin-top: 15px;
 }
 
 section.success a,
@@ -174,6 +175,7 @@ section.success a.active {
   /*background: black;*/
   color: black;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .bout {
@@ -181,7 +183,7 @@ section.success a.active {
 }
 
 #technologies {
-  margin-top: 70px;
+  margin-top: 30px;
   color: #53D4C8;
 }
 
@@ -248,6 +250,7 @@ section.success a.active {
 
 #portfolio * {
     z-index: 2;
+    background-color: #ffffff;
 }
 
 @media(min-width:767px) {
@@ -479,4 +482,7 @@ footer .footer-below {
 	-webkit-border-radius: 25px;
 	border-radius: 25px;
   opacity: 0.9;
+}
+
+#foodle {
 }
