@@ -9,6 +9,10 @@ body {
     background: #efefef;
 }
 
+.heading {
+  margin-top: 10px;
+}
+
 p {
     font-size: 20px;
 }
@@ -174,7 +178,7 @@ section.success a.active {
 #about {
   /*background: black;*/
   color: black;
-  padding-top: 10px;
+  padding-top: 90px;
   padding-bottom: 10px;
 }
 
@@ -190,6 +194,7 @@ section.success a.active {
 #tech {
   list-style-type: none;
   margin-top: 35px;
+  margin-bottom: 90px;
 }
 
 .tech-items {
